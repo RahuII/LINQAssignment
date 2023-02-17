@@ -89,7 +89,7 @@ namespace Linq
 
         public void CalculateMean()
         {
-            // select all employees ID whose age is greater than 30.
+            // select all employees  whose age is greater than 30.
             var idList = from emp in employeeList.Cast<Employee>() where emp.Age > 30 select new { emp.EmployeeID, emp.EmployeeLastName, emp.EmployeeFirstName };
 
             // join employee and salary list on employee id select all data which is important for our requirement.
